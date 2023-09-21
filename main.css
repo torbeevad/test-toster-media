@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0;
+    text-align: center;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(241, 157, 47, 1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    background: rgba(255, 209, 172, 1);
+}
+
+.offer {
+    position: relative;
+}
+
+.offer__image {
+    width: 100%;
+}
+
+.offer__banner {
+    position: absolute;
+    width: 103px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Gotham Pro", sans-serif ;
+    justify-content: space-around;
+}
+
+.offer__title {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.offer__data {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.offer__banner_timer {
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(241, 157, 47, 1);
+}
+
+.offer__banner_price{
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(55, 217, 151, 1);
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.timer__items {
+    display: flex;
+
+}
+

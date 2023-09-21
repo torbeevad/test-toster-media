@@ -1,10 +1,11 @@
 body {
     width: 100%;
     margin: 0;
+    font-family: "Gotham Pro", sans-serif;
+    background-color: whitesmoke;
 }
 
 header {
-    font-family: "Gotham Pro", sans-serif;
     font-size: 13px;
     font-weight: 600;
     line-height: 12px;
@@ -15,6 +16,14 @@ header {
     align-items: center;
     justify-content: space-around;
     background-color: rgba(241, 157, 47, 1);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 .logo {
@@ -43,7 +52,6 @@ header {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: "Gotham Pro", sans-serif ;
     justify-content: space-around;
 }
 
@@ -66,7 +74,7 @@ header {
     background-color: rgba(241, 157, 47, 1);
 }
 
-.offer__banner_price{
+.offer__banner_price {
     bottom: 20px;
     right: 20px;
     background-color: rgba(55, 217, 151, 1);
@@ -79,6 +87,110 @@ header {
 
 .timer__items {
     display: flex;
-
 }
 
+.product {
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product__tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.product__rate {
+    font-size: 12px;
+    color: rgba(44, 43, 49, 1);
+}
+
+.product__tag {
+    color: rgba(55, 217, 151, 1);
+}
+
+.product__title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.product__picture {
+    width: 100%;
+}
+
+.product__image-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1%;
+}
+
+.product__image {
+    list-style-type: none;
+    width: 100%;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.product__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.delivery__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.delivery__desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.product__selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.product__select, .btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0;
+}
+
+.star {
+    fill: whitesmoke;
+    stroke: grey;
+}
+
+.star-active {
+    fill: #F8B656;
+    stroke: #F8B656;
+}

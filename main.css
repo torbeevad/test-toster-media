@@ -1,6 +1,7 @@
 body {
     width: 100%;
     margin: 0;
+    padding-bottom: 20px;
     font-family: "Gotham Pro", sans-serif;
     background-color: whitesmoke;
 }
@@ -124,6 +125,15 @@ li {
 
 .product__picture {
     width: 100%;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 3s;
+}
+
+.product__picture-animation {
+    width: 100%;
+    opacity: 0;
+    transition-duration: 0.1s;
 }
 
 .product__image-list {
@@ -135,6 +145,7 @@ li {
 
 .product__image {
     list-style-type: none;
+    cursor: pointer;
     width: 100%;
 }
 
